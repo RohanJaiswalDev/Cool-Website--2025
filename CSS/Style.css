@@ -1,0 +1,461 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
+/* Global -- reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: #f5f5f5;
+    line-height: 1.6;
+    font-size: 16px;
+    overflow-x: hidden !important;
+}
+
+/* Custom Scroll-bar */
+::-webkit-scrollbar {
+    background: #111;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #95e7f9;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Span */
+span {
+    color: #1691c6;
+}
+
+/* All section */
+section {
+    padding: 120px 0;
+}
+
+/* default: width Styling */
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    padding: 20px;
+    background: #0000006d;
+    backdrop-filter: blur(20px) saturate(100%);
+}
+
+#header .head-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#header .logo a {
+    text-decoration: none;
+}
+
+#header .logo a h1 {
+    color: #f4486a;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+#header #navbar .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+#header #navbar .nav-list a {
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05px;
+    color: #fff;
+}
+
+#header #navbar .nav-list a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2.05px;
+    background: linear-gradient(to right, #cdcccc, #fddcdc);
+    transition: 0.3s ease-in;
+}
+
+#header #navbar .nav-list a:hover::after {
+    width: 100%;
+}
+
+/* Hero */
+#hero {
+    background-image: url("/Img/Hero-BG.jpg"), linear-gradient(to right, #96ffd3, #ce616c);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+#hero .hero-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#hero .max-width {
+    max-width: 550px;
+    margin-inline: auto;
+}
+
+#hero .hero-content p {
+    text-align: center;
+    font-size: 16px;
+}
+
+#hero .hero-content .h-con-size {
+    font-size: 30px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+#hero .hero-btn {
+    margin: 20px 0;
+}
+
+.hero-btn button {
+    width: 30%;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 0;
+    cursor: pointer;
+    background: skyblue;
+}
+
+.hero-btn .flex-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#hero .hero-btn button a {
+    color: #1a2239;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+}
+
+#hero .hero-btn button:hover {
+    background-color: #1691c6;
+}
+
+#hero .hero-btn button:hover a {
+    color: #fff;
+}
+
+/* Services */
+#services {
+    background: url("/Img/Service-BG.webp");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#services .service-intro {
+    text-align: center;
+    text-transform: uppercase;
+    color: #e1e1e1;
+}
+
+#services .service-flex .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    color: #fff;
+}
+
+#services .service-flex .cards .card {
+    width: calc(33% - 20px);
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background: #00000053;
+    backdrop-filter: blur(6px);
+    transition: 0.25s ease-in;
+    cursor: pointer;
+}
+
+#services .service-flex .cards .card h3 {
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+#services .service-flex .cards .card p {
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+
+#services .service-flex .cards .bx {
+    color: crimson;
+    font-size: 40px;
+}
+
+#services .service-flex .cards .card:hover {
+    box-shadow: 0px 6px 10px #000;
+    backdrop-filter: blur(10px);
+}
+
+#services .service-flex .cards .card:hover i {
+    color: chocolate;
+}
+
+#services .service-flex .cards .card:hover p {
+    color: #f07d7d;
+}
+
+#services .service-flex .cards .card:hover h3 {
+    color: #f07d7d;
+}
+
+/* About */
+#about {
+    background: url("/Img/About-BG.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#about .about-intro {
+    text-align: center;
+    text-transform: uppercase;
+    color: #e1e1e1;
+}
+
+#about .about-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    padding: 50px;
+}
+
+#about .about-flex .about-me {
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+}
+
+#about .about-flex .profile img {
+    border-radius: 50%;
+    border: 10px solid skyblue;
+    object-fit: cover;
+}
+
+/* Contact Us */
+
+#contact {
+    background: url("/Img/Contact-BG.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#contact .contact-intro {
+    text-align: center;
+    text-transform: uppercase;
+    color: #e1e1e1;
+}
+
+.form-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    min-height: 100vh;
+}
+
+.form-container {
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+#signup-form {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    outline: 0;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: skyblue;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1691c6;
+}
+
+#message-box {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    background: linear-gradient(to right, #814949, #221e1e, #702222);
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+footer .footer-content a {
+    color: #e51a1a;
+    text-decoration: none;
+}
+
+footer .footer-content a:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #header #navbar .nav-list {
+        gap: 15px;
+    }
+
+    #hero .hero-content .h-con-size {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    #services .service-flex .cards {
+        flex-direction: column;
+    }
+
+    #services .service-flex .cards .card {
+        width: 100%;
+    }
+
+    #about .about-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #about .about-flex .profile img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #header #navbar .nav-list {
+        gap: 10px;
+    }
+
+    #hero .hero-content .h-con-size {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .hero-btn button {
+        width: 40%;
+    }
+
+    #about .about-flex .profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .form-container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
